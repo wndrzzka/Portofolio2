@@ -27,10 +27,6 @@ export default function Stats() {
         ))}
       </div>
 
-      <div className="bg-[var(--surface)] border-4 border-brutal rounded-xl brutal-shadow p-3 sm:p-5 mb-4 sm:mb-6 flex items-center justify-center reveal reveal-d2 brutal-card card-glow">
-        <img src="https://github-profile-trophy.vercel.app/?username=wndrzzka&theme=radical&row=2&column=4" alt="GitHub Trophies" className="w-full" />
-      </div>
-
       <div className="grid md:grid-cols-2 gap-4 sm:gap-6 reveal reveal-d2">
         <div className="bg-[var(--surface)] border-4 border-brutal rounded-xl brutal-shadow p-3 sm:p-5 flex items-center justify-center brutal-card card-glow">
           <img src="https://github-readme-stats.vercel.app/api?username=wndrzzka&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" className="w-full max-w-sm" />

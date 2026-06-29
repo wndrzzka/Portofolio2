@@ -68,11 +68,23 @@ export default function Donation() {
             <div className="flex gap-3 mt-4 justify-center">
               <button
                 onClick={() => {
-                  const a = document.createElement('a')
-                  a.href = 'https://files.catbox.moe/vm9kwk'
-                  a.download = 'qris-wann.png'
-                  a.target = '_blank'
-                  a.click()
+                  const img = new Image()
+                  img.crossOrigin = 'anonymous'
+                  img.onload = () => {
+                    const c = document.createElement('canvas')
+                    c.width = img.width
+                    c.height = img.height
+                    const ctx = c.getContext('2d')
+                    ctx.drawImage(img, 0, 0)
+                    c.toBlob((blob) => {
+                      const a = document.createElement('a')
+                      a.href = URL.createObjectURL(blob)
+                      a.download = 'qris-wann.jpg'
+                      a.click()
+                      URL.revokeObjectURL(a.href)
+                    }, 'image/jpeg', 0.95)
+                  }
+                  img.src = 'https://files.catbox.moe/vm9kwk'
                 }}
                 className="font-bold text-[9px] sm:text-[10px] uppercase bg-[#8A2BE2] text-white border-4 border-black rounded-xl px-4 py-2 brutal-shadow-sm brutal-btn flex items-center gap-1"
               >
