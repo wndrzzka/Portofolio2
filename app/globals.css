@@ -288,14 +288,15 @@ html { scroll-behavior: smooth; }
 }
 
 /* ── aceh wobble ── */
-.aceh-wobble {
-  animation: acehWobble 2.5s ease-in-out infinite;
+.aceh-glitch {
+  animation: acehGlitch 3s ease-in-out infinite;
 }
-@keyframes acehWobble {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-3px) rotate(-1deg); }
-  50% { transform: translateY(0) rotate(0deg); }
-  75% { transform: translateY(-3px) rotate(1deg); }
+@keyframes acehGlitch {
+  0%, 90%, 100% { transform: translate(0) skew(0deg); }
+  92% { transform: translate(-2px, 1px) skew(-1deg); }
+  94% { transform: translate(2px, -1px) skew(1deg); }
+  96% { transform: translate(-1px, 2px) skew(-0.5deg); }
+  98% { transform: translate(1px, -2px) skew(0.5deg); }
 }
 
 /* ── sparkles ── */

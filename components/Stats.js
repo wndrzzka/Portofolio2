@@ -28,7 +28,7 @@ export default function Stats() {
       </div>
 
       <div className="bg-[var(--surface)] border-4 border-brutal rounded-xl brutal-shadow p-3 sm:p-5 mb-4 sm:mb-6 flex items-center justify-center reveal reveal-d2 brutal-card card-glow">
-        <img src="https://github-profile-trophy.vercel.app/?username=wndrzzka&theme=radical" alt="GitHub Trophies" className="w-full" />
+        <img src="https://github-profile-trophy.vercel.app/?username=wndrzzka&theme=algolia&no-frame=true&row=2&column=4" alt="GitHub Trophies" className="w-full" />
       </div>
 
       <div className="grid md:grid-cols-2 gap-4 sm:gap-6 reveal reveal-d2">
