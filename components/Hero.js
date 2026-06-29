@@ -54,7 +54,7 @@ export default function Hero() {
           Telegram Bot Developer, automating support for my business. Self-taught, WFH - Aceh.
         </p>
         <p className="text-[11px] sm:text-xs font-bold mt-2 uppercase tracking-wider text-[#FF6B35]">
-          <i className="fas fa-bullseye mr-1.5"></i>Public Speaker &bull; Businessman &bull; Investor
+          <i className="fas fa-rocket mr-1.5"></i>Dream: Public Speaker &bull; Businessman &bull; Investor
         </p>
         <div className="flex gap-2 sm:gap-3 mt-5 sm:mt-8 flex-wrap">
           <a href="#proyek" className="font-bold text-[10px] sm:text-xs uppercase bg-[#8A2BE2] text-white border-4 border-black rounded-xl px-5 sm:px-7 py-3 sm:py-4 brutal-shadow-sm brutal-btn flex items-center gap-1.5">
